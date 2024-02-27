@@ -12,7 +12,7 @@
 
 // TODO change this to plain html if you don't use any functions
 
-$var = <<<BISMIALLAH
+echo '
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,13 +20,14 @@ $var = <<<BISMIALLAH
 </head>
 <body>
     <h1>in the name of Allah</h1>
-    <form>
-        site name/ip: <input type="text">
+    <form action="request.php" method="get">
+        <label for="site_addr">site name/ip:</label>
+        <input type="text" id="site_addr" name="site_addr">
+        <p>will add the flags input soon by the will of Allah</p>
+        <button type="submit">scan</button>
     </form>
 </body>
 </html>
-BISMIALLAH;
-
-echo $var;
+';
 
 ?>
